@@ -48,11 +48,11 @@ a {
     background-position: center;
 }
 
-#hero h1 {
+#hero > h1 {
     max-width: 60%;
     background-color: rgb(0 0 0 /0.5);
     color: rgb(255, 255, 255);
-    text-shadow: #fff;
+    text-shadow: #ffffff;
     text-align: center;
   
     padding: 10px;
@@ -75,8 +75,40 @@ a {
 .services {
     background-color: #fafafa;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(3 1fr);
     column-gap: 10px;
+}
+
+.article {
+    background-color: #fff;
+    width: 250px;
+    height: 400px;
+    display: inline-block;
+    padding: 10px;
+    margin: 15px;
+    column-gap: 10px;
+    justify-content: space-around;
+}
+
+.btn {
+    display: inline-block;
+    width: 120px;
+    background-color: #000;
+    border-color: #000;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5%;
+    border-width: 14px;
+    margin: auto 0
+}
+
+.btn:hover {
+    background-color: #fff;
+    color: #000;
+    border-color: #000;
+    border-style: solid;
+    border-width: 3px;
 }
 
 .gallery {
